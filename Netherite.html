@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)https://netherite.gg/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Netherite</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./Netherite_files/screen.css">
+    <link rel="stylesheet" type="text/css" href="./Netherite_files/header.css">
+    <link rel="stylesheet" href="./Netherite_files/all.min.css">
+    <link rel="stylesheet" href="./Netherite_files/materialdesignicons.min.css">
+    <link href="./Netherite_files/css2" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./Netherite_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7N42HVLB73');
+    </script>
+    <meta name="description" content="Netherite Minecraft">
+    <link rel="icon" href="https://netherite.gg/content/images/size/w256h256/format/png/2022/06/logo.webp" type="image/png">
+    <link rel="canonical" href="https://netherite.gg/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="next" href="https://netherite.gg/page/2/">
+    
+    <meta property="og:site_name" content="Netherite">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Netherite">
+    <meta property="og:description" content="Netherite Minecraft">
+    <meta property="og:url" content="https://netherite.gg/">
+    <meta property="og:image" content="https://netherite.gg/content/images/2022/06/unknown.png">
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Netherite">
+    <meta name="twitter:description" content="Netherite Minecraft">
+    <meta name="twitter:url" content="https://netherite.gg/">
+    <meta name="twitter:image" content="https://netherite.gg/content/images/2022/06/unknown.png">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="615">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Netherite",
+        "url": "https://netherite.gg/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://netherite.gg/content/images/2022/06/iconpng.png"
+        }
+    },
+    "url": "https://netherite.gg/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://netherite.gg/content/images/2022/06/unknown.png",
+        "width": 1200,
+        "height": 615
+    },
+    "mainEntityOfPage": "https://netherite.gg/",
+    "description": "Netherite Minecraft"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.96">
+    <link rel="alternate" type="application/rss+xml" title="Netherite" href="https://netherite.gg/rss/">
+    
+    <script defer="" src="./Netherite_files/sodo-search.min.js" data-key="59797e08089803c4815de7be28" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.3/umd/main.css" data-sodo-search="https://netherite.gg/" data-locale="en" crossorigin="anonymous"></script>
+    
+    <link href="https://netherite.gg/webmentions/receive/" rel="webmention">
+    <script defer="" src="./Netherite_files/cards.min.js"></script><style>:root {--ghost-accent-color: #ff4644;}</style>
+    <link rel="stylesheet" type="text/css" href="./Netherite_files/cards.min.css">
+    <style>
+:root {
+    --logo_width: 320px;
+    --main-color: #ff4644;
+    --error-color: #fe3c45;
+    --hover-buy: #48995d;
+    --hover-sell: #d9373f;
+    --hover-info: #218bdf;
+    --background-color: #17171b;
+    --second-background: #242424;
+    --third-background: #292929;
+    --fourth-background: #17171b;
+    --package-border: #3c3c3c;
+    --primary-text-color: #ffffff;
+    --focus-text-color: #ff921b;
+    --secondary-text-color: #aeaeae;
+    --cold-color: #ff921b;
+    --green-button: #4da564;
+    --light-green: #57b871;
+    --disable-button: #428954;
+    --font-family: Montserrat, sans-serif;
+    --tiny-font: 12px;
+    --small-font: 14px;
+    --medium-font: 16px;
+    --big-font: 18px;
+    --border-radius: 5px;
+    --header-img: url("https://cdn.discordapp.com/attachments/939603421374316586/964528571894874193/unknown.png");
+    --filter-shadow: rgba(255, 70, 68, 0.5);
+    --gradient-shadow: #652f30;
+    --height-image: 530px;
+    --opacity-image: 0.2;
+    --blur-image: 4px;
+}    
+.triplezone__body--page .triplezone__vote--flex .triplezone__vote--col:hover {
+    background: #ff5a58;
+}    
+.triplezone__nav .triplezone__nav--left li a .mdi[data-icon="Staff-icon"]:before {
+    content: "\F029B";
+    font-size: 1.5em;
+    margin-right: 8px;
+}   
+@media only screen and (min-width: 968px) {
+    .header-logo .header-logo-image {
+        max-width: var(--logo_width) !important;
+    } 
+    .header-logo {
+    	top: 36px !important;
+	}
+} 
+.teata {
+    background: linear-gradient(transparent 0,rgb(0 0 0 / 53%) 30%,#17171b 100%) !important;
+}    
+.triplezone__footer {
+    background: #0000002b;
+    color: #818190 !important;
+    border-top: 1px solid var(--second-background);
+}  
+.triplezone__footer .col-footer ul li a {
+    color: #818190;
+}
+.triplezone__nav .triplezone__nav--left li a {
+    color: #818190;
+}
+.post-card-excerpt {
+    color: #c0c0ca !important;
+}
+#particles-js {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+@media only screen and (min-width: 968px) {
+    .triplezone-header-g {
+        margin-top: -72px !important;
+    }    
+}    
+</style>
+
+<style>.App{text-align:center}.App-logo{height:40vmin;pointer-events:none}@media (prefers-reduced-motion: no-preference){.App-logo{animation:App-logo-spin infinite 20s linear}}.App-header{background-color:#282c34;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:calc(10px + 2vmin);color:#fff}.App-link{color:#61dafb}@keyframes App-logo-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}
+</style></head>
+<body class="home-template">
+
+    <div class="site-wrapper">
+
+        
+
+<div class="header-splash">
+    <div class="teata" style="height: 100%; width: 100%; background: linear-gradient(transparent 0,rgb(0 0 0 / 53%) 30%,#0b1a26 100%);">
+    </div>
+</div>
+<header class="triplezone-header">
+    <div id="particles-js"><canvas class="particles-js-canvas-el" width="2924" height="366" style="width: 100%; height: 100%;"></canvas></div>
+    <div class="triplezone-wrapper prioritate">
+        <div class="triplezone-header-g">
+            <div class="widget minecraft-widget">
+                <div class="widget-icon"><span class="player-count">221</span><i class="mdi mdi-play-circle"></i>
+                </div>
+                <div class="description-widget">
+                    <p class="widget-title">site.netherite.gg</p>
+                    <p class="widget-description">click to copy</p>
+                </div>
+            </div>
+            <div class="header-logo">
+                <a href="https://netherite.gg/">
+                        <img src="./Netherite_files/iconpng.png" alt="Netherite" class="header-logo-image">
+                </a>
+            </div>
+            <div class="widget discord-widget">
+                <div class="description-widget">
+                    <p class="widget-title">Discord Server</p>
+                    <p class="widget-description">click to join</p>
+                </div>
+                <div class="widget-icon"><span id="discord-count">2,692</span><i class="mdi mdi-discord"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>    
+<!--<nav class="site-nav">
+    <div class="site-nav-left-wrapper">
+        <div class="site-nav-left">
+                <a class="site-nav-logo" href="https://netherite.gg"><img src="https://netherite.gg/content/images/2022/06/iconpng.png" alt="Netherite" /></a>
+            <div class="site-nav-content">
+                    <ul class="nav">
+    <li class="nav-about"><a href="https://netherite.gg/about/">About</a></li>
+    <li class="nav-home nav-current"><a href="https://netherite.gg/">Home</a></li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="site-nav-right">
+            <ul class="nav">
+    <li class="nav-home nav-current"><a href="https://netherite.gg/">Home</a></li>
+    <li class="nav-rules"><a href="https://netherite.gg/rules/">Rules</a></li>
+    <li class="nav-vote"><a href="https://netherite.gg/vote/">Vote</a></li>
+    <li class="nav-content"><a href="https://netherite.gg/content/">Content</a></li>
+</ul>
+
+
+    </div>
+</nav>
+-->
+
+<div class="triplezone-wrapper flex-wrapper">
+    <div class="triplezone__nav">
+        <div class="triplezone__nav--left">
+                <li><a href="https://netherite.gg/" class=" active-nav"><i class="mdi" data-icon="Home-icon"></i>Home</a></li>
+                <li><a href="https://netherite.gg/rules/" class=""><i class="mdi" data-icon="Rules-icon"></i>Rules</a></li>
+                <li><a href="https://netherite.gg/vote/" class=""><i class="mdi" data-icon="Vote-icon"></i>Vote</a></li>
+                <li><a href="https://netherite.gg/content/" class=""><i class="mdi" data-icon="Content-icon"></i>Content</a></li>
+        </div>
+        <div class="triplezone__nav--right">
+            <li><a href="https://store.netherite.gg/" class="store--btn"><span></span><span></span><i class="mdi" data-icon="Store-icon"></i> Store</a></li>
+        </div>
+    </div>
+</div>
+<main id="site-main" class="site-main outer">
+    <div class="triplezone-wrapper posts">
+
+        <div class="post-feed">
+
+                <article class="triplezone-card post triplezone__card--large">
+
+    <a class="post-card-image-link" href="https://netherite.gg/skyblock-season-8/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2024/09/mc-skyblock.webp 300w,
+                    /content/images/size/w600/2024/09/mc-skyblock.webp 600w,
+                    /content/images/size/w1000/2024/09/mc-skyblock.webp 1000w,
+                    /content/images/size/w2000/2024/09/mc-skyblock.webp 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/mc-skyblock.webp" alt="Skyblock Season 8">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/skyblock-season-8/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Skyblock Season 8</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Netherite Skyblock launches this Sunday, September 8th, at 2:00 PM EST.
+
+This is our biggest update/revamp we've ever done to any of our gamemodes. Skyblock has</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-09-15">15 Sep 2024</time> <span class="bull">•</span> 4 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post ">
+
+    <a class="post-card-image-link" href="https://netherite.gg/best-minecraft-servers-2024-5/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2024/09/best.webp 300w,
+                    /content/images/size/w600/2024/09/best.webp 600w,
+                    /content/images/size/w1000/2024/09/best.webp 1000w,
+                    /content/images/size/w2000/2024/09/best.webp 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/best.webp" alt="Best Minecraft Servers 2025">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/best-minecraft-servers-2024-5/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Best Minecraft Servers 2025</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>In the ever-evolving world of Minecraft, the server scene has grown significantly, offering an array of unique and immersive experiences for players. As of 2025, several servers stand out for</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-09-15">15 Sep 2024</time> <span class="bull">•</span> 1 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post tag-news tag-prison ">
+
+    <a class="post-card-image-link" href="https://netherite.gg/prison-release-alpha/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2024/05/2024-05-27_20.45.07.png 300w,
+                    /content/images/size/w600/2024/05/2024-05-27_20.45.07.png 600w,
+                    /content/images/size/w1000/2024/05/2024-05-27_20.45.07.png 1000w,
+                    /content/images/size/w2000/2024/05/2024-05-27_20.45.07.png 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/2024-05-27_20.45.07.png" alt="Prison Release | Alpha">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/prison-release-alpha/">
+
+            <header class="post-card-header">
+                    <div class="post-card-primary-tag">News</div>
+                <h2 class="post-card-title">Prison Release | Alpha</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>We are proud to announce the official release of our brand new gamemode, Prison!
+We've been working on this gamemode for the past 10 months and are thrilled</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-05-27">27 May 2024</time> <span class="bull">•</span> 4 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post ">
+
+    <a class="post-card-image-link" href="https://netherite.gg/how-to-join-netherite/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2024/02/netherite-logo.png 300w,
+                    /content/images/size/w600/2024/02/netherite-logo.png 600w,
+                    /content/images/size/w1000/2024/02/netherite-logo.png 1000w,
+                    /content/images/size/w2000/2024/02/netherite-logo.png 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/netherite-logo.png" alt="Joining Netherite.GG in 2024">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/how-to-join-netherite/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Joining Netherite.GG in 2024</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Joining Netherite is pretty straight forward. In this article we will give you the credentials you need to join Netherite on Minecraft Java, Pocket Edition, Bedrock &amp; Console.
+
+
+
+Joining on</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-02-14">14 Feb 2024</time> <span class="bull">•</span> 1 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post ">
+
+    <a class="post-card-image-link" href="https://netherite.gg/add-mods-minecraft/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2024/02/bg.webp 300w,
+                    /content/images/size/w600/2024/02/bg.webp 600w,
+                    /content/images/size/w1000/2024/02/bg.webp 1000w,
+                    /content/images/size/w2000/2024/02/bg.webp 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/bg.webp" alt="Adding mods to Minecraft in 2024 (Java Edition)">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/add-mods-minecraft/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Adding mods to Minecraft in 2024 (Java Edition)</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Adding mods to Minecraft can significantly enhance your gameplay experience by introducing new content, features, and improvements that are not available in the vanilla version of the game. Mods can</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-02-14">14 Feb 2024</time> <span class="bull">•</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post no-image triplezone__card--without_image">
+
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/best-minecraft-prison-servers-in-2024/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Best Minecraft Prison Servers in 2024</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>In the ever-evolving world of Minecraft, the prison server scene has grown significantly, offering an array of unique and immersive experiences for players. As of 2024, several servers stand out for their quality, community, and features. This guide will walk you through the top</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-01-13">13 Jan 2024</time> <span class="bull">•</span> 2 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post ">
+
+    <a class="post-card-image-link" href="https://netherite.gg/how-to-install-minecraft-in-2024/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2024/01/article.webp 300w,
+                    /content/images/size/w600/2024/01/article.webp 600w,
+                    /content/images/size/w1000/2024/01/article.webp 1000w,
+                    /content/images/size/w2000/2024/01/article.webp 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/article.webp" alt="How to Install Minecraft in 2024">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/how-to-install-minecraft-in-2024/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">How to Install Minecraft in 2024</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Minecraft, a globally popular sandbox game, remains a favorite among players of all ages. As of 2024, installing Minecraft across various devices has been streamlined. Here's a comprehensive</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2024-01-12">12 Jan 2024</time> <span class="bull">•</span> 1 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post ">
+
+    <a class="post-card-image-link" href="https://netherite.gg/minecraft-gens-tycoon/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2023/12/diamond.webp 300w,
+                    /content/images/size/w600/2023/12/diamond.webp 600w,
+                    /content/images/size/w1000/2023/12/diamond.webp 1000w,
+                    /content/images/size/w2000/2023/12/diamond.webp 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/diamond.webp" alt="Minecraft Gens Tycoon: How to Play">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/minecraft-gens-tycoon/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Minecraft Gens Tycoon: How to Play</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Overview
+
+Minecraft Gens Tycoon, also known as "Generators", is a game mode that combines the mechanics of tycoon games with Minecraft's creative potential. Players use generators</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2023-12-28">28 Dec 2023</time> <span class="bull">•</span> 1 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post ">
+
+    <a class="post-card-image-link" href="https://netherite.gg/how-to-play-minecraft-skyblock/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2023/12/mc-skyblock.webp 300w,
+                    /content/images/size/w600/2023/12/mc-skyblock.webp 600w,
+                    /content/images/size/w1000/2023/12/mc-skyblock.webp 1000w,
+                    /content/images/size/w2000/2023/12/mc-skyblock.webp 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/mc-skyblock(1).webp" alt="Easy Guide to Playing Minecraft Skyblock in 2023">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/how-to-play-minecraft-skyblock/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">Easy Guide to Playing Minecraft Skyblock in 2023</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>You may wonder how you should play Minecraft Skyblock in 2023, this article will cover everything there is to know!
+
+Minecraft Skyblock has undeniably gained widespread popularity among gamers worldwide</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2023-12-24">24 Dec 2023</time> <span class="bull">•</span> 7 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+
+                <article class="triplezone-card post ">
+
+    <a class="post-card-image-link" href="https://netherite.gg/how-to-fly-in-minecraft-all-methods/">
+        <img class="post-card-image" srcset="/content/images/size/w300/2023/12/article-fly.webp 300w,
+                    /content/images/size/w600/2023/12/article-fly.webp 600w,
+                    /content/images/size/w1000/2023/12/article-fly.webp 1000w,
+                    /content/images/size/w2000/2023/12/article-fly.webp 2000w" sizes="(max-width: 1000px) 400px, 700px" loading="lazy" src="./Netherite_files/article-fly.webp" alt="How to Fly in Minecraft (All Methods)">
+    </a>
+
+    <div class="post-card-content">
+
+        <a class="post-card-content-link" href="https://netherite.gg/how-to-fly-in-minecraft-all-methods/">
+
+            <header class="post-card-header">
+                <h2 class="post-card-title">How to Fly in Minecraft (All Methods)</h2>
+            </header>
+
+            <section class="post-card-excerpt">
+                    <p>Minecraft, the wildly popular sandbox game, allows players to explore vast virtual worlds filled with endless possibilities. One of the most sought-after abilities in Minecraft is the power to fly.</p>
+            </section>
+
+        </a>
+
+        <footer class="post-card-meta">
+            <ul class="author-list">
+                <li class="author-list-item">
+            
+                    <div class="author-name-tooltip">
+                        Netherite GG
+                    </div>
+            
+                    <a href="https://netherite.gg/author/netherite/" class="static-avatar author-profile-image"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M3.513 18.998C4.749 15.504 8.082 13 12 13s7.251 2.504 8.487 5.998C18.47 21.442 15.417 23 12 23s-6.47-1.558-8.487-4.002zM12 12c2.21 0 4-2.79 4-5s-1.79-4-4-4-4 1.79-4 4 1.79 5 4 5z" fill="#FFF"></path></g></svg>
+</a>
+                </li>
+            </ul>
+            <div class="post-card-byline-content">
+                <span><a href="https://netherite.gg/author/netherite/">Netherite GG</a></span>
+                <span class="post-card-byline-date"><time datetime="2023-12-24">24 Dec 2023</time> <span class="bull">•</span> 8 min read</span>
+            </div>
+        </footer>
+
+    </div>
+
+</article>
+
+        </div>
+
+    </div>
+</main>
+
+<div class="triplezone-wrapper flex-wrapper">
+    <nav class="triplezone__pagination" role="pagination">
+            <a class="triplezone__pagination--previous__hidden" href="https://netherite.gg/"><i class="mdi mdi-chevron-left"></i></a>
+        <span class="page">Page 1 of 3</span>
+            <a class="triplezone__pagination--next" href="https://netherite.gg/page/2/"><i class="mdi mdi-chevron-right"></i></a>
+    </nav>
+</div>
+
+
+
+
+        <input type="text" id="ipServer" value="site.netherite.gg">
+
+        <div class="triplezone__footer">
+			<div class="triplezone-wrapper">
+				<div class="footer-premium-flex">
+					<div class="col-footer">
+						<h3>About us</h3>
+                        <h5>Welcome to Netherite</h5>
+                        <p>Join our thriving community at site.netherite.gg for an unparalleled gaming adventure. Our server boasts a diverse array of game modes to cater to every Minecraft enthusiast, ensuring endless hours of excitement and competition.</p>
+                        <h5>Stable Connection</h5>
+                        <p>Our server offers a seamless experience with a dedicated IP (site.netherite.gg) and easy Bedrock port access (19132).</p>
+                        <h5>Cross-Platform</h5>
+                        <p>No need for a port on Java – connect effortlessly and play with friends on different platforms.</p>
+                        <h5>Active Community</h5>
+                        <p>Join a vibrant community of Minecraft enthusiasts, where new friendships are forged and epic adventures unfold.</p>
+                        <h5>Constant Updates</h5>
+                        <p>Experience fresh content regularly, ensuring that your Netherite journey is always evolving.</p>
+                        <h4>🌐 How to Join:</h4>
+                        <p>
+Java Edition: Simply connect to site.netherite.gg.
+Bedrock Edition: Use the IP site.netherite.gg and port 19132 for a seamless cross-platform experience.
+Embark on your Netherite adventure today and discover the next level of Minecraft gaming! Explore, build, conquer – Netherite awaits!</p>
+					</div>
+                    <div class="col-footer">
+                        <h3>Game Modes:</h3>
+                        <h5>Factions</h5>
+                        <p>Form alliances, build fortresses, and engage in epic battles to dominate the land.</p>
+                        <h5>Skyblock</h5>
+                        <p>Challenge yourself with the classic survival mode in the sky, where resourcefulness is key to survival.</p>
+                        <h5>Prison</h5>
+                        <p>Embark on a unique journey of mining, leveling up, and escaping the confines of the prison world.</p>
+                        <h5>Towny</h5>
+                        <p>Collaborate with fellow players to build and manage a thriving town in a cooperative setting.</p>
+                        <h5>Lifesteal</h5>
+                        <p>Immerse yourself in a thrilling survival experience where every move matters, and survival depends on your cunning and adaptability.</p>
+                        <h5>Survival</h5>
+                        <p>Embrace the classic Minecraft experience, where the world is yours to explore, build, and conquer.</p>
+                    </div>
+					<div class="col-footer">
+						<h3>We're social!</h3>
+						<ul>
+							<li>
+							    <a href="https://discord.netherite.gg/" target="">Discord</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/PlayNetherite" target="">Twitter</a>
+							</li>
+							<li>
+							    <a href="https://www.youtube.com/watch?v=6Bs8nI0G0hI" target="">YouTube</a>
+							</li>
+					</ul></div>
+					<div class="col-footer">
+						<h3>Support the server</h3>
+						<p>Help support the upkeep of the server and purchase cool cosmetics, upgrades and additional features to use across our network!</p>
+						<a href="https://store.netherite.gg/" class="footer-store">Go to Store</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="triplezone-wrapper">
+					<div class="footer-copyright-flex">
+                        <a href="https://play-minecraft-servers.com/">Minecraft Server List</a>
+                        <p>Not an official Minecraft Product! We are not affiliated with Mojang AB.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+    </div>
+
+
+    <script src="./Netherite_files/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+    </script>
+    <script src="./Netherite_files/main.js"></script>
+    <script src="./Netherite_files/sweetalert.min.js"></script>
+    <script src="./Netherite_files/deluxe.js"></script>
+
+    <script>
+        // Parse the URL parameter
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Give the parameter a variable name
+        var action = getParameterByName('action');
+        var success = getParameterByName('success');
+
+        $(document).ready(function () {
+            if (action == 'subscribe' && (success === null || success === 'true')) {
+                $('body').addClass('subscribe-success');
+            }
+
+            if (action == 'subscribe' && success === 'false') {
+                $('body').addClass('subscribe-failure');
+            }
+
+            $('.subscribe-notification .subscribe-close-button').click(function () {
+                $('.subscribe-notification').addClass('close');
+            });
+
+            // Reset form on opening subscrion overlay
+            $('.subscribe-button').click(function() {
+                $('.subscribe-overlay form').removeClass();
+                $('.subscribe-email').val('');
+            });
+        });
+    </script>
+
+    
+
+
+    
+    <script src="./Netherite_files/particles.min.js"></script>
+<script>
+        particlesJS("particles-js",{particles:{number:{value:120,density:{enable:!0,value_area:500}},color:{value:"#e98114"},shape:{type:"circle",stroke:{width:0,color:"#000000"},polygon:{nb_sides:5},image:{src:"img/github.svg",width:100,height:100}},opacity:{value:.3,random:!1,anim:{enable:!1,speed:1,opacity_min:.1,sync:!1}},size:{value:3,random:!0,anim:{enable:!1,speed:40,size_min:.1,sync:!1}},line_linked:{enable:!1,distance:150,color:"#ffffff",opacity:.4,width:1},move:{enable:!0,speed:2,direction:"top",random:!1,straight:!1,out_mode:"out",bounce:!1,attract:{enable:!1,rotateX:600,rotateY:1200}}},interactivity:{detect_on:"canvas",events:{onhover:{enable:!1,mode:"repulse"},onclick:{enable:!1,mode:"push"},resize:!0},modes:{grab:{distance:400,line_linked:{opacity:1}},bubble:{distance:400,size:40,duration:2,opacity:8,speed:3},repulse:{distance:200,duration:.4},push:{particles_nb:4},remove:{particles_nb:2}}},retina_detect:!0});    
+</script>
+
+
+
+<div id="sodo-search-root"></div></body></html>
